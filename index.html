@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Sumithra ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Firefly cursor-trail canvas (signature element, present on every page) -->
+<canvas id="firefly-canvas"></canvas>
+
+<!-- Loading screen -->
+<div id="loader">
+  <div class="beating-heart">❤️</div>
+  <p>loading our story…</p>
+</div>
+
+<!-- Sound toggle -->
+<button id="sound-toggle" aria-label="Toggle music">🔇</button>
+<audio id="bg-music" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="app">
+
+  <!-- PAGE 1 — WELCOME -->
+  <section class="page active" id="page-1" data-page="1">
+    <div class="stars"></div>
+    <div class="page-inner center">
+      <div id="envelope" class="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter">
+          <p class="letter-line">Hi Sumithra</p>
+          <p class="letter-line">❤️</p>
+        </div>
+        <div class="envelope-flap"></div>
+      </div>
+      <h1 class="fade-in-text" id="welcome-title">Hi Sumithra <span class="heart-pop">❤️</span></h1>
+      <p class="fade-in-text subtitle">This isn't just a website… it's a little piece of my heart, created only for you.</p>
+      <button class="btn btn-primary" id="open-heart-btn">Open My Heart 💌</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 — THE PROPOSAL -->
+  <section class="page" id="page-2" data-page="2">
+    <div class="floating-hearts-bg"></div>
+    <div class="page-inner center">
+      <div class="big-heart">❤️</div>
+      <h1 class="script-heading">Sumithra… ❤️</h1>
+      <h2 class="ask-heading">Will You Be Mine Forever?</h2>
+      <div class="button-row" id="proposal-buttons">
+        <button class="btn btn-yes" id="yes-btn">❤️ YES</button>
+        <button class="btn btn-no" id="no-btn">💔 NO</button>
+      </div>
+      <p class="dodge-message" id="dodge-message"></p>
+    </div>
+    <canvas id="explosion-canvas"></canvas>
+  </section>
+
+  <!-- PAGE 3 — FIRST MEETING -->
+  <section class="page" id="page-3" data-page="3">
+    <div class="scene scene-chennai">
+      <div class="sun"></div>
+      <div class="skyline"></div>
+      <div class="birds"></div>
+    </div>
+    <div class="page-inner">
+      <p class="chapter-label">Chapter One</p>
+      <h1 class="typewriter" data-lines="Every beautiful story has a beginning…|Ours began in Chennai.|That first meeting became one of the happiest moments of my life."></h1>
+      <button class="btn btn-primary next-btn">Continue Our Story ❤️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 — ECR RIDE -->
+  <section class="page" id="page-4" data-page="4">
+    <div class="scene scene-ecr">
+      <div class="ocean"></div>
+      <div class="road"></div>
+      <div class="palm palm-1">🌴</div>
+      <div class="palm palm-2">🌴</div>
+      <div class="bike-couple">🏍️</div>
+      <div class="petals-layer"></div>
+    </div>
+    <div class="page-inner">
+      <p class="chapter-label">Chapter Two</p>
+      <h1 class="reveal-text">Every ride with you felt magical.</h1>
+      <p class="reveal-text delay-1">The spending of 2 hours bike ride from accenture to ECR & to Ur hostel</p>
+      <p class="reveal-text delay-1">The roads ended…</p>
+      <p class="reveal-text delay-2">but my feelings never will.</p>
+      <button class="btn btn-primary next-btn">Next Memory ❤️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 5 — CORN -->
+  <section class="page" id="page-5" data-page="5">
+    <div class="scene scene-corn">
+      <div class="corn-stall">🌽</div>
+      <div class="steam"></div>
+    </div>
+    <div class="page-inner">
+      <p class="chapter-label">Chapter Three</p>
+      <h1 class="reveal-text">It wasn't about the corn…</h1>
+      <p class="reveal-text delay-1">it was about sharing that little moment with you.</p>
+      <button class="btn btn-primary next-btn">One More Memory ❤️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 6 — SEASHORE -->
+  <section class="page" id="page-6" data-page="6">
+    <div class="scene scene-beach">
+      <div class="moon"></div>
+      <div class="lanterns"></div>
+      <div class="waves"></div>
+      <div class="silhouettes">🧍‍♂️🧍‍♀️</div>
+    </div>
+    <div class="page-inner">
+      <p class="chapter-label">Chapter Four</p>
+      <h1 class="reveal-text">Among every beautiful place…</h1>
+      <p class="reveal-text delay-1">sitting beside you on the seashore became my favourite place in this world.</p>
+      <p class="reveal-text delay-2 whisper">The waves. The cool breeze. Your presence beside me.</p>
+      <p class="reveal-text delay-3 whisper">That moment will stay in my heart forever.</p>
+      <button class="btn btn-primary next-btn">Continue ❤️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 7 — MY HEART -->
+  <section class="page" id="page-7" data-page="7">
+    <div class="scene scene-galaxy"></div>
+    <div class="page-inner center">
+      <h1 class="typewriter-slow" data-lines="Distance never changed my feelings.|My heart always searched for you.|Even if my love stayed one-sided…|I never stopped believing.|Because every heartbeat whispered only one name…|Sumithra ❤️"></h1>
+      <button class="btn btn-primary next-btn">Continue ❤️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 8 — YOUR BEAUTY -->
+  <section class="page" id="page-8" data-page="8">
+    <div class="scene scene-garden">
+      <div class="fireflies-decor"></div>
+      <div class="petals-layer"></div>
+    </div>
+    <div class="page-inner center">
+      <p class="reveal-text">Your smile blooms brighter than every flower.</p>
+      <p class="reveal-text delay-1">Your eyes shine brighter than the stars.</p>
+      <p class="reveal-text delay-2">Your kindness makes my world beautiful.</p>
+      <p class="reveal-text delay-3">To me, you are the most beautiful person in this universe, Sumithra ❤️</p>
+      <button class="btn btn-primary next-btn">One Last Page ❤️</button>
+    </div>
+  </section>
+
+  <!-- PAGE 9 — FINAL CONFESSION -->
+  <section class="page" id="page-9" data-page="9">
+    <div class="scene scene-finale"></div>
+    <canvas id="finale-canvas"></canvas>
+    <div class="page-inner center">
+      <h1 class="glow-title">❤️ I LOVE YOU SUMITHRA ❤️</h1>
+      <div id="finale-lines" class="finale-lines"></div>
+      <h2 class="final-ask" id="final-ask">❤️ Will You Stay With Me Forever? ❤️</h2>
+      <div class="signature" id="signature">
+        <p>Forever Yours</p>
+        <p class="sig-name">❤️ Madhan M ❤️</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
