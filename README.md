@@ -1,4 +1,4 @@
-# For Sumithra ❤️ — Proposal Website
+#Proposal Website
 
 ## How to run it
 Just open `index.html` in a browser — no build step, no server needed.
