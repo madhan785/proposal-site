@@ -5,7 +5,7 @@
   --navy: #0b1026;
   --navy-2: #141b3d;
   --blush: #f7c6d9;
-  --ocean-blue: #0077be;
+  --gold: #FFD700;
   --coral: #ff8a65;
   --cream: #fff8f0;
   --maroon: #7a1f3d;
@@ -126,7 +126,7 @@ button{ font-family: var(--font-body); cursor:pointer; border:none; }
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-size: 0.7rem;
-  color: var(--ocean-blue);
+  color: var(--gold);
   opacity: 0.85;
 }
 
